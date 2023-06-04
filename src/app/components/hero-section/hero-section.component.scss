@@ -31,22 +31,23 @@
         font-weight: bold;
         color: var(--title-color);
         font-size: 70px;
-        margin-bottom: 0px;
+        margin-bottom: 45px;
     }
     mat-card-subtitle {
         font-family: var(--font-inter);
         font-weight: 800;
         color: var(--subtitle-color);
         font-size: 36px;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
     mat-card-content {
         font-family: var(--font-hind);
         font-weight: 400;
         color: var(--title-color);
-        font-size: 32px;
+        font-size: 26px;
         margin-bottom: 30px;
         width: 80%;
+        line-height: 1.5;
     }
     button {
         font-family: var(--font-inter);

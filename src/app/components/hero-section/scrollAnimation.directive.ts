@@ -15,17 +15,17 @@ export class ScrollAnimationDirective {
     const offset = 0; // Adjust this value to control when the transition starts
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrolledPercentage = (scrolled / documentHeight) * 100;
+    const scrolledPerecentageFirstVH = (scrolled / pixelsToMove*2) * 100
+    console.log(scrolledPerecentageFirstVH);
 
-    if (scrolled > offset) {
+    if (scrolledPerecentageFirstVH < 114) {
       //this.renderer.addClass(socials, 'scrolled');
       this.renderer.setStyle(
         socials,
         'top',
         //`${80-scrolled/(scrolled+pixelsToMove)*100}%`
-        `${scrolledPercentage+80-(scrolled/(scrolled+pixelsToMove)*100*1.7)}%`
+        `${scrolledPerecentageFirstVH+80-(scrolled/(scrolled+pixelsToMove)*100*1.7)}%`
       );
-    } else {
-      this.renderer.setStyle(socials, 'top', '80%');
     }
   }
 }
