@@ -1,1 +1,41 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* Colors */
+:root {
+    --primary-color: #74758E;
+    --secondary-color: #ACACC1;
+    --third-color: #615487;
+
+    --success-color: #28a745;
+    --error-color: #dc3545;
+
+    --title-color: #171717;
+    --subtitle-color: #FAFAFA;
+    /* Add more color variables as needed */
+  }
+  
+  /* Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Hind:wght@400;700&family=Inter:wght@400;700;800&family=Istok+Web:wght@400;700&display=swap');
+  
+  :root {
+    --font-hind: 'Hind', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-istok-web: 'Istok Web', sans-serif;
+    --font-cinzel: 'Cinzel Decorative', sans-serif;
+  }
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(83, 76, 107);
+  outline: 1px solid rgb(83, 76, 107);
+}
