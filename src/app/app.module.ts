@@ -23,6 +23,7 @@ import { HeroSectionComponent } from './components/hero-section/hero-section.com
 import { ScrollAnimationDirective } from './components/hero-section/scrollAnimation.directive';
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
+import { ScrollEffectDirective } from './components/nav-bar/scroll-effect.directive';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { ProjectsSectionComponent } from './components/projects-section/projects
     HeroSectionComponent,
     ScrollAnimationDirective,
     AboutSectionComponent,
-    ProjectsSectionComponent
+    ProjectsSectionComponent,
+    ScrollEffectDirective
   ],
   imports: [
     BrowserModule,
