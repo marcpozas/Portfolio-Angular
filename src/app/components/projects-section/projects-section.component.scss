@@ -41,40 +41,42 @@
 }
 
 .project-div {
-    height: 400px;
+    height: 450px;
     width: auto;
     border-radius: 60px;
     overflow: hidden;
     padding-left: 100px;
-    transition: background-color 0.3s ease-in-out, margin 0.3s ease-in-out;
-}
-
-.first-project {
-    background-color: #fd8168;
-    margin-top: 10px;
-    
+    margin-top: 5px;
+    transition: background-color 0.2s ease-in-out, margin 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 
     &:hover {
-        background-color: #FFA390;
+        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
         margin-top: 0;
-
-        .project-info {
-            margin-bottom: 20px;
-        }
     }
-    
+
     .project-info {
         display: flex;
         justify-content: flex-end;
         font-family: var(--font-monomaniac-one);
         font-size: 32px;
-        transition: margin 0.3s ease-in-out;
+        transition: margin 0.2s ease-in-out;
 
         .project-name {
             margin: 40px 60px;
         }
     }
+}
 
+.first-project {
+    background-color: #fd8168;
+
+    &:hover {
+        background-color: rgb(255, 153, 132);
+
+        .project-info {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .second-project {
