@@ -33,7 +33,7 @@
 .all-projects-div {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 70px;
 }
 
 .project-div-container {
@@ -41,7 +41,8 @@
 }
 
 .project-div {
-    height: 450px;
+    cursor: pointer;
+    height: 500px;
     width: auto;
     border-radius: 60px;
     overflow: hidden;
@@ -81,4 +82,25 @@
 
 .second-project {
     background-color: #FFC875;
+    padding: 0;
+    
+    &:hover {
+        background-color: #ffd493;
+
+        .project-info {
+            margin-bottom: 20px;
+        }
+    }
+
+    figure {
+        display: flex;
+        justify-content: center;
+        img {
+            max-height: 430px;
+            
+        }
+    }
+
+
+
 }
