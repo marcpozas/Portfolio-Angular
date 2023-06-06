@@ -24,6 +24,7 @@ import { ScrollAnimationDirective } from './components/hero-section/scrollAnimat
 import { AboutSectionComponent } from './components/about-section/about-section.component';
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { ScrollEffectDirective } from './components/nav-bar/scroll-effect.directive';
+import { ContactmeSectionComponent } from './components/contactme-section/contactme-section.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { ScrollEffectDirective } from './components/nav-bar/scroll-effect.direct
     ScrollAnimationDirective,
     AboutSectionComponent,
     ProjectsSectionComponent,
-    ScrollEffectDirective
+    ScrollEffectDirective,
+    ContactmeSectionComponent
   ],
   imports: [
     BrowserModule,

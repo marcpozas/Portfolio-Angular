@@ -1,32 +1,31 @@
-.about-section {
+.contactme-section {
     background-color: #EAE6E4;
     height: 100vh;
     width: auto;
     display: flex;
+
+    flex-direction: column;
+}
+
+.contactme-title {
+    display: flex;
+    width: auto;
     align-items: center;
     justify-content: center;
 }
 
-.about-content {
-    height: 50%;
+.contactme-title-content {
+    height: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
+    margin: 4rem 0;
+    margin: 14rem 0 4rem 0;
 
     h2 {
         font-family: var(--font-istok-web);
         font-weight: bold;
         color: var(--title-color);
         font-size: 4.4rem;
-        margin-bottom: 4rem;
     }
-    p {
-        font-family: var(--font-hind);
-        font-weight: 400;
-        color: var(--title-color);
-        font-size: 1.5rem;
-        margin-bottom: 1.25rem;
-        line-height: 1.3;
-    }
-
 }
