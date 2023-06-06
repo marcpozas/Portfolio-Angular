@@ -19,33 +19,33 @@
 
 .hello-card{
     background-color: var(--secondary-color);
-    margin-left: 200px;
+    margin-left: 12.5rem;
     max-width: 40%;
     height: 55%;
-    padding: 50px;
-    border-radius: 60px 60px 180px 60px;
+    padding: 3.5rem;
+    border-radius: 3.75rem 3.75rem 11.25rem 3.75rem;
     box-shadow: -2px 6px 4px 0 rgba(0, 0, 0, 0.25);
 
     mat-card-title {
         font-family: var(--font-istok-web);
         font-weight: bold;
         color: var(--title-color);
-        font-size: 70px;
-        margin-bottom: 45px;
+        font-size: 4.4rem;
+        margin-bottom: 2.8rem;
     }
     mat-card-subtitle {
         font-family: var(--font-inter);
         font-weight: 800;
         color: var(--subtitle-color);
-        font-size: 36px;
-        margin-bottom: 30px;
+        font-size: 2.25rem;
+        margin-bottom: 1.9rem;
     }
     mat-card-content {
         font-family: var(--font-hind);
         font-weight: 400;
         color: var(--title-color);
-        font-size: 26px;
-        margin-bottom: 30px;
+        font-size: 1.63rem;
+        margin-bottom: 1.9rem;
         width: 80%;
         line-height: 1.5;
     }
@@ -54,26 +54,26 @@
         font-weight: 700;
         background-color: var(--third-color);
         color: var(--subtitle-color);
-        font-size: 32px;
-        padding: 45px 50px;
-        border-radius: 14px;
+        font-size: 2rem;
+        padding: 2.8rem 3.1rem;
+        border-radius: 1rem;
     }
 }
 
 .me-img {
-    margin: 30px 10px 0px 180px;
+    margin: 1.9rem 0.6rem 0px 11.25rem;
     height: 100%;
     display: flex;
     align-items: flex-start;
     img {
-        width: 400px;
+        width: 25rem;
         height: auto;
     }
 }
 
 .socials {
     position: absolute;
-    right: 40px;
+    right: 2.5rem;
     top: 80%;
     transform: translateY(-50%);
     display: flex;
@@ -82,7 +82,7 @@
     width: 6%;
     height: 20%;
     background-color: var(--secondary-color);
-    border-radius: 10px;
+    border-radius: 0.6rem;
     box-shadow: -2px 6px 4px 0 rgba(0, 0, 0, 0.25);
     span {
         display: flex;
@@ -92,7 +92,7 @@
         height: 45%;
 
         img {
-            width: 50px;
+            width: 3rem;
             height: auto;
             cursor: pointer;
         }
