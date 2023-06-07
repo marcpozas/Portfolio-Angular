@@ -6,4 +6,50 @@
         </div>
     </div>
 
+    <div class="contactme-content">
+        <div class="contactme-socials">
+          <div class="contactme-social-element">
+            <img src="assets/icons/linkedin_icon.png" alt="">
+            <div class="contactme-social-linkedin-info">
+              <p class="social-title">LinkedIn</p>
+              <p class="social-user">marcpozas</p>
+            </div>
+          </div>
+          <div class="contactme-social-element">
+            <img src="assets/icons/github_icon.png" alt="">
+            <div class="contactme-social-linkedin-info">
+              <p class="social-title">GitHub</p>
+              <p class="social-user">marcpozas</p>
+            </div>
+          </div>
+          <div class="contactme-social-element">
+            <img src="assets/icons/542638.png" alt="">
+            <div class="contactme-social-linkedin-info">
+              <p class="social-title">Email</p>
+              <p class="social-user">marc.pozas11@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contactme-form">
+          <form [formGroup]="contactForm" (ngSubmit)="submitForm()" *ngIf="contactForm">
+            <div>
+              <label for="name" (mousedown)="setInvalid('name')">Tu nombre:</label>
+              <input type="text" id="name" formControlName="name" [ngClass]="{ 'invalid': isInvalid('name') }" />
+            </div>
+          
+            <div>
+              <label for="email" (mousedown)="setInvalid('email')">Email:</label>
+              <input type="email" id="email" formControlName="email" [ngClass]="{ 'invalid': isInvalid('email') }" />
+            </div>
+          
+            <div>
+              <label for="message" (mousedown)="setInvalid('message')">Mensaje:</label>
+              <textarea id="message" formControlName="message" [ngClass]="{ 'invalid': isInvalid('message') }"></textarea>
+            </div>
+          
+            <button type="submit" [disabled]="contactForm.invalid">Enviar mensaje<mat-icon>send</mat-icon></button>
+          </form>
+        </div>
+    </div>
+
 </section>

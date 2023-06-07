@@ -25,6 +25,7 @@ import { AboutSectionComponent } from './components/about-section/about-section.
 import { ProjectsSectionComponent } from './components/projects-section/projects-section.component';
 import { ScrollEffectDirective } from './components/nav-bar/scroll-effect.directive';
 import { ContactmeSectionComponent } from './components/contactme-section/contactme-section.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { ContactmeSectionComponent } from './components/contactme-section/contac
     MatToolbarModule,
     MatTableModule,
     MatBadgeModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

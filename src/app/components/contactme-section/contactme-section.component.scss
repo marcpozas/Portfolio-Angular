@@ -1,5 +1,5 @@
 .contactme-section {
-    background-color: #EAE6E4;
+    background-color: #b5b6ca;
     height: 100vh;
     width: auto;
     display: flex;
@@ -25,7 +25,143 @@
     h2 {
         font-family: var(--font-istok-web);
         font-weight: bold;
-        color: var(--title-color);
         font-size: 4.4rem;
+        display: flex;
+        justify-content: center;
+        color: var(--title-color);
     }
+}
+
+.contactme-socials {
+    margin-top: 5rem;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactme-social-element {
+display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
+width: 33%;
+flex-direction: row;
+margin-bottom: 2rem;
+
+    .contactme-social-linkedin-info {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        p {
+            display: flex;
+            justify-content: flex-start;
+            font-family: var(--font-inter);
+            
+            color: var(--title-color);
+        }
+        .social-title {
+            font-weight: 800;
+            font-size: 1.5rem;
+        }
+        .social-user {
+            font-weight: 400;
+            font-size: 1rem;
+        }
+    }
+}
+
+.contactme-socials img {
+width: 40%;
+height: auto;
+max-height: 80px;
+object-fit: contain;
+margin-right: 1rem;
+}
+
+.social-title {
+margin-top: 0.5rem;
+font-weight: bold;
+}
+
+.social-user {
+margin-top: 0.2rem;
+color: #888;
+}
+
+.contactme-content {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    gap: 2rem;
+    margin: 0 20rem;
+  }
+
+  .contactme-form {
+    background-color: #FFBFAD;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactme-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .contactme-form input[type="text"],
+  .contactme-form input[type="email"],
+  .contactme-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1.5px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    background-color: rgb(247, 247, 247);
+  }
+  
+.contactme-form textarea {
+    height: 20vh;
+}
+
+.contactme-form input[type="text"]:focus,
+.contactme-form input[type="email"]:focus,
+.contactme-form textarea:focus {
+    outline: none;
+    border-color: #666;
+}
+
+.contactme-form input[type="text"]:invalid:not(:focus),
+.contactme-form input[type="email"]:invalid:not(:focus),
+.contactme-form textarea:invalid:not(:focus) {
+  border-color: red;
+}
+
+.contactme-form input[type="text"]:valid:not(:focus),
+.contactme-form input[type="email"]:valid:not(:focus),
+.contactme-form textarea:valid:not(:focus) {
+  border-color: initial; /* or any other default border color */
+}
+
+  
+  .contactme-form button[type="submit"] {
+    background-color: #be7efa;
+    color: #fff;
+    border: none;
+    border-radius: 0.65rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+  }
+  
+  .contactme-form button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+.invalid {
+    border-color: rgb(199, 85, 85) !important;
 }
