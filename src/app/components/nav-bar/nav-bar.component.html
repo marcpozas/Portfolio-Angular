@@ -1,15 +1,14 @@
-<mat-toolbar class="navbar mat-toolbar-initial" scrollEffect>
+<mat-toolbar [class.secondColor]="isScrolled" class="navbar mat-toolbar-initial" scrollEffect>
 
-  <span class="navbar-logo"><p>Marc</p></span>
+  <span (click)="scrollToSection('hero-section')" class="navbar-logo"><p class="unselectable">Marc</p></span>
 
-  <div class="navbar-items">
-    <a routerLink="/skills">Inicio</a>
-    <a routerLink="/projects">Sobre mí</a>
-    <a routerLink="/about">Proyectos</a>
-    <a routerLink="/contact">Contáctame</a>
+  <div class="navbar-items unselectable">
+    <a (click)="scrollToSection('hero-section')">Inicio</a>
+    <a (click)="scrollToSection('about-section')">Sobre mí</a>
+    <a (click)="scrollToSection('projects-section')">Proyectos</a>
+    <a (click)="scrollToSection('contactme-section')">Contáctame</a>
 
     <div class="navbar-darkmode">
-      <img src="assets/icons/dark_mode_icon.png" alt="Dark Mode">
     </div>
 
   </div>

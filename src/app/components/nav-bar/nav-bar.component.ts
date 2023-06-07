@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -6,7 +6,17 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
+  isScrolled = false;
 
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.isScrolled = window.pageYOffset >= window.innerHeight;
+  }
 
-  
+  @Output() scrollToSectionEvent = new EventEmitter<string>();
+
+  scrollToSection(sectionId: string) {
+    console.log("app-nav-bar found!");
+    this.scrollToSectionEvent.emit(sectionId);
+  }
 }

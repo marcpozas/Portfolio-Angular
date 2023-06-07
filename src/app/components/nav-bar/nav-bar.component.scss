@@ -9,7 +9,7 @@
   position: fixed;
   z-index: 2;
 
-  transition: height 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out, background-color 0.3s ease;
 }
 
 .mat-toolbar-initial {
@@ -46,6 +46,7 @@
     font-size: 1.6rem;
     color: var(--title-color); /* Set your desired text color */
     transition: color 0.2s ease, border 0.1s ease;
+    cursor: pointer;
   }
   
   .navbar-items a:hover {
@@ -62,3 +63,6 @@
     }
   }
   
+.secondColor {
+  background-color: #74758E;
+}

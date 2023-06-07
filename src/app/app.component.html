@@ -1,8 +1,16 @@
 
-<app-nav-bar></app-nav-bar>
-<app-hero-section></app-hero-section>
-<app-about-section></app-about-section>
-<app-projects-section></app-projects-section>
-<app-contactme-section></app-contactme-section>
+<app-nav-bar (scrollToSectionEvent)="scrollToSection($event)"></app-nav-bar>
+<div id="app-hero" #heroSection>
+    <app-hero-section></app-hero-section>
+</div>
+<div id="app-about" #aboutSection>
+  <app-about-section></app-about-section>
+</div>
+<div id="app-projects" #projectsSection>
+  <app-projects-section></app-projects-section>
+</div>
+<div id="app-contactme" #contactmeSection>
+  <app-contactme-section></app-contactme-section>
+</div>
 
 <router-outlet></router-outlet>
