@@ -65,4 +65,7 @@
   
 .secondColor {
   background-color: #74758E;
+  .navbar-items a:hover {
+    border-bottom: 2px dashed #53345c;
+  }
 }
