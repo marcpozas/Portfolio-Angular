@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: #ACACC1; /* Set your desired background color */
-  padding: 0.6rem 3.75rem;
-  height: 5.5%;
+  padding: 0.6rem 6rem;
+  height: 6%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
   position: fixed;
   z-index: 2;
@@ -13,7 +13,7 @@
 }
 
 .mat-toolbar-initial {
-  height: 10%;
+  height: 8%;
 }
 
   .navbar-logo {
@@ -42,12 +42,15 @@
   
   .navbar-items a {
     text-decoration: none;
+    font-family: var(--font-hind);
+    font-size: 1.6rem;
     color: var(--title-color); /* Set your desired text color */
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, border 0.1s ease;
   }
   
   .navbar-items a:hover {
     color: var(--subtitle-color); /* Set your desired hover color */
+    border-bottom: 2px dashed #806388;
   }
   
   .navbar-darkmode {
