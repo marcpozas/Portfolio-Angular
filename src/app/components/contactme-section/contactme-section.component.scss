@@ -1,6 +1,6 @@
 .contactme-section {
     background-color: #b5b6ca;
-    height: 100vh;
+    height: 110vh;
     width: auto;
     display: flex;
 
@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     margin: 4rem 0;
-    margin: 14rem 0 4rem 0;
+    margin: 14rem 0 6rem 0;
 
     h2 {
         font-family: var(--font-istok-web);
@@ -40,42 +40,54 @@
 }
 
 .contactme-social-element {
-display: flex;
-align-items: center;
-flex-direction: column;
-text-align: center;
-width: 33%;
-flex-direction: row;
-margin-bottom: 2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  //width: 33%;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  width: 15rem;
+  padding: 0.5rem 0 0.5rem 1rem;
+  border-radius: 0.5rem;
+  
+  &:hover {
+    background-color: #9e9fbb;
+  }
 
-    .contactme-social-linkedin-info {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        p {
-            display: flex;
-            justify-content: flex-start;
-            font-family: var(--font-inter);
-            
-            color: var(--title-color);
-        }
-        .social-title {
-            font-weight: 800;
-            font-size: 1.5rem;
-        }
-        .social-user {
-            font-weight: 400;
-            font-size: 1rem;
-        }
+  &:last-child:hover {
+    background-color: initial;
+  }
+
+  .contactme-social-linkedin-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    p {
+      display: flex;
+      justify-content: flex-start;
+      font-family: var(--font-inter);
+      
+      color: var(--title-color);
     }
+    .social-title {
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+    .social-user {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+  }
 }
 
 .contactme-socials img {
-width: 40%;
+width: 25%;
 height: auto;
 max-height: 80px;
 object-fit: contain;
-margin-right: 1rem;
+margin-right: 2rem;
 }
 
 .social-title {
@@ -96,7 +108,7 @@ color: #888;
   }
 
   .contactme-form {
-    background-color: #FFBFAD;
+    background-color: rgb(255 255 255 / 30%);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -155,10 +167,11 @@ color: #888;
     display: flex;
     gap: 0.8rem;
     align-items: center;
+    transition: background-color 0.2s ease-in-out;
   }
   
   .contactme-form button[type="submit"]:disabled {
-    background-color: #ccc;
+    background-color: rgb(170, 170, 170);
     cursor: not-allowed;
   }
 
