@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContactmeSectionComponent implements OnInit {
   title = "Contáctame"
+  subtitle = "Me encantaría escuchar tus ideas y ayudarte a convertirlas en realidad. Ponte en contacto conmigo para empezar"
   contactForm: FormGroup;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {
