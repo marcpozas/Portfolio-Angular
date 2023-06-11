@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -11,7 +12,7 @@ export class ContactmeSectionComponent implements OnInit {
   title = "Contáctame"
   contactForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
@@ -19,9 +20,7 @@ export class ContactmeSectionComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-
-  }
+  ngOnInit() {}
 
   submitForm() {
     if (this.contactForm.invalid) {
@@ -31,8 +30,23 @@ export class ContactmeSectionComponent implements OnInit {
   
     // Handle valid form submission and send the data to the server
     const formData = this.contactForm.value;
-    console.log(formData); // Example: Print form data to the console
+    console.log(formData);
+  
+    this.http.post('https://5264v0m0rd.execute-api.eu-north-1.amazonaws.com/dev/sendcontact', formData)
+      .subscribe(
+        (response) => {
+          console.log(response); // Example: Print server response to the console
+          // Handle the server response as needed
+        },
+        (error) => {
+          console.error(error); // Example: Print error to the console
+          // Handle the error as needed
+        }
+      );
   }
+  
+  
+  
 
   isInvalid(fieldName: string): boolean {
     const control = this.contactForm.get(fieldName);
