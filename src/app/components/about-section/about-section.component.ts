@@ -14,6 +14,7 @@ export class AboutSectionComponent {
     "Mi enfoque principal en este momento se centra en aprender y construir herramientas de inteligencia artificial. Siempre estoy ansioso por aprender y mantenerme actualizado en los avances tecnológicos."
   ];
   contactMeButton = "Contáctame";
+  aboutMeCV = "Mi CV"
 
   constructor() {
 
@@ -21,6 +22,10 @@ export class AboutSectionComponent {
 
   ngOnInit() {
     // Perform component initialization tasks here
+  }
+
+  public openPDF(): void {
+    window.open('assets/pdf/CV.pdf', '_blank');
   }
 
 }
