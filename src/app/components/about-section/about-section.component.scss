@@ -57,3 +57,48 @@
         }
     }
 }
+
+.lateral-icons {
+    height: 10rem;
+    width: auto;
+    // transition: transform 0.3s; /* Add a transition for the hover effect */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(6deg);
+    }
+    75% {
+      transform: rotate(-6deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  .html-icon {
+    position: absolute;
+    left: 8rem;
+    top: calc(100vh + 5%);
+  }
+  
+  .API-icon {
+    position: absolute;
+    left: 8rem;
+    top: calc(100vh + 55%);
+  }
+  
+  .command-line-icon {
+    position: absolute;
+    right: 8rem;
+    top: calc(100vh + 35%);
+  }
+  
+  .lateral-icons:hover {
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation: spin 1s ease-in-out;
+  }

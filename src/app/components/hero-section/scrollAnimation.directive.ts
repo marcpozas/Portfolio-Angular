@@ -16,7 +16,7 @@ export class ScrollAnimationDirective {
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
     const scrolledPercentage = (scrolled / documentHeight) * 100;
     const scrolledPerecentageFirstVH = (scrolled / pixelsToMove*2) * 100
-    console.log(scrolledPerecentageFirstVH);
+    // console.log(scrolledPerecentageFirstVH);
 
     if (scrolledPerecentageFirstVH < 114) {
       //this.renderer.addClass(socials, 'scrolled');

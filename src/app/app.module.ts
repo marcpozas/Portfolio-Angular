@@ -27,6 +27,7 @@ import { ScrollEffectDirective } from './components/nav-bar/scroll-effect.direct
 import { ContactmeSectionComponent } from './components/contactme-section/contactme-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AboutScrollAnimationDirective } from './components/about-section/about-scroll-animation.directive';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AboutSectionComponent,
     ProjectsSectionComponent,
     ScrollEffectDirective,
-    ContactmeSectionComponent
+    ContactmeSectionComponent,
+    AboutScrollAnimationDirective
   ],
   imports: [
     BrowserModule,
