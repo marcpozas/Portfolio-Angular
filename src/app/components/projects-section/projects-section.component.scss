@@ -1,5 +1,5 @@
 .projects-section {
-    height: 100vh;
+    height: 160vh;
     width: auto;
     background-color: #EAE6E4;
     background-color: #b5b6ca;
@@ -8,14 +8,27 @@
     flex-direction: column;
 }
 
-.projects-title {
+.projects-content {
     display: flex;
     width: auto;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
-.projects-content {
+.projects-subtitle {
+    width: 50%;
+    margin-bottom: 4rem;
+
+    h6 {
+        font-family: var(--font-inter);
+        font-size: 1.6rem;
+        line-height: 1.3;
+        text-align: center;
+    }
+}
+
+.projects-title {
     height: auto;
     width: 50%;
     display: flex;
@@ -27,18 +40,23 @@
         font-family: var(--font-istok-web);
         font-weight: bold;
         color: var(--title-color);
-        font-size: 4.4rem;
+        // font-size: 4.4rem;
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
     }
 }
 
 .all-projects-div {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 4.4rem;
 }
 
 .project-div-container {
     width: 40%;
+    flex-basis: 40%;
 }
 
 .project-div {
@@ -83,7 +101,6 @@
 
 .second-project {
     background-color: #FFC875;
-    padding: 0;
     
     &:hover {
         background-color: #ffd493;
@@ -94,10 +111,30 @@
     }
 
     figure {
-        display: flex;
-        justify-content: center;
+        // display: flex;
+        // justify-content: center;
         img {
-            max-height: 27rem;
+            max-height: 30rem;
+        }
+    }
+}
+
+.third-project {
+    background-color: #c08af1;
+    
+    &:hover {
+        background-color: rgb(201, 143, 255);
+
+        .project-info {
+            margin-bottom: 1.25rem;
+        }
+    }
+
+    figure {
+        // display: flex;
+        // justify-content: center;
+        img {
+            max-height: 28rem;
         }
     }
 }

@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class ProjectsSectionComponent {
 
   title = "Proyectos"
+  subtitle = "Explora una colección de mis proyectos más destacados, donde he aplicado mi creatividad y habilidades en el campo de desarrollo de software."
 
 }
