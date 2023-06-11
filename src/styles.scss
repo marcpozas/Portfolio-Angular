@@ -19,7 +19,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   
   /* Google Fonts */
   //@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Hind:wght@400;700&family=Inter:wght@400;700;800&family=Istok+Web:wght@400;700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Hind:wght@400;700&family=Inter:wght@400;700;800&family=Istok+Web:wght@400;700&family=Monomaniac+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Hind:wght@400;700&family=Inter:wght@400;700;800&family=Istok+Web:wght@400;700&family=Monomaniac+One&family=Sanchez&display=swap');
   
   :root {
     --font-hind: 'Hind', sans-serif;
@@ -27,6 +27,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     --font-istok-web: 'Istok Web', sans-serif;
     --font-cinzel: 'Cinzel Decorative', sans-serif;
     --font-monomaniac-one: 'Monomaniac One', sans-serif;
+    --font-sanchez: 'Sanchez', sans-serif;
   }
 
 body::-webkit-scrollbar {
@@ -47,4 +48,9 @@ body::-webkit-scrollbar-thumb {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE 10+ */
   user-select: none;
+}
+
+::selection {
+  background-color: #beaaf5; /* Change the background color */
+  color: #ffffff;
 }
