@@ -34,16 +34,12 @@
     display: flex;
     gap: 3.75rem;
     align-items: center;
-    font-family: var(--font-hind);
-    font-weight: 400;
-    color: var(--title-color);
-    font-size: 1.75rem;
   }
   
   .navbar-items a {
     text-decoration: none;
     font-family: var(--font-hind);
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     color: var(--title-color); /* Set your desired text color */
     transition: color 0.2s ease, border 0.1s ease;
     cursor: pointer;
@@ -52,15 +48,6 @@
   .navbar-items a:hover {
     color: var(--subtitle-color); /* Set your desired hover color */
     border-bottom: 2px dashed #806388;
-  }
-  
-  .navbar-darkmode {
-    cursor: pointer;
-    img {
-      width: 1.9rem;
-      height: auto;
-      color: var(--title-color);
-    }
   }
   
 .secondColor {

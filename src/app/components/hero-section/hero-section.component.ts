@@ -9,7 +9,7 @@ export class HeroSectionComponent {
 
   title = "Hola, soy Marc";
   subtitle = "Junior Developer";
-  content = "Experiencia en Front End y en desarrollo de aplicaciones";
+  content = "Experiencia en Front End, Back End y desarrollo de aplicaciones";
   contactMeButton = "Contáctame";
 
   constructor() {

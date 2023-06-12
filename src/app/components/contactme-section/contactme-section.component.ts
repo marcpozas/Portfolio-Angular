@@ -22,7 +22,7 @@ export class ContactmeSectionComponent implements OnInit {
   }
 
   ngOnInit() {}
-
+  
   submitForm() {
     if (this.contactForm.invalid) {
       // Handle invalid form submission
@@ -45,9 +45,6 @@ export class ContactmeSectionComponent implements OnInit {
         }
       );
   }
-  
-  
-  
 
   isInvalid(fieldName: string): boolean {
     const control = this.contactForm.get(fieldName);
