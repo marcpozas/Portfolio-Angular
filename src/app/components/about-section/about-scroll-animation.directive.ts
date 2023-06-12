@@ -32,7 +32,7 @@ export class AboutScrollAnimationDirective {
     console.log("iconInitialPercentageHeight" + iconInitialPercentageHeight);
     console.log("scrolledPercentageFirstVH" + scrolledPercentageFirstVH);
 
-    if (scrolledPercentageFirstVH > 30 && scrolledPercentageFirstVH < 200) {
+    if (scrolledPercentageFirstVH < 200) {
       //this.renderer.addClass(socials, 'scrolled');
       this.renderer.setStyle(
         icon,
