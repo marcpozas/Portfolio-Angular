@@ -1,0 +1,39 @@
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 10rem;
+    flex-direction: column;
+    background-color: var(--third-color);
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+
+    .socials-element {
+        margin: 0rem 0.5rem;
+        text-transform: uppercase;
+        
+
+        a {
+            text-decoration: none;
+            color: #fcfcfc;
+            font-size: 1rem;
+            font-family: var(--font-inter);
+
+            &::after {
+            content: "|";
+            color: rgba(255, 255, 255, 0.15);
+            padding-left: 1rem;
+            }
+        }
+    }
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: rgb(190, 190, 190);
+}

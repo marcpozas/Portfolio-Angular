@@ -1,0 +1,16 @@
+<footer class="footer">
+
+  <ul class="socials">
+    <li class="socials-element" *ngFor="let socialItem of socialList">
+      <a [href]="socialItem.href">
+        <span>{{socialItem['name']}}</span>
+      </a>
+    </li>
+  </ul>
+
+  <div class="copyright">
+    <span> &copy; Copyright 2023 </span>
+    <span> Design by Marc </span>
+  </div>
+
+</footer>
