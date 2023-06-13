@@ -11,9 +11,9 @@
     display: flex;
     justify-content: center;
     list-style: none;
+    padding-left: 0;
 
     .socials-element {
-        margin: 0rem 0.5rem;
         text-transform: uppercase;
         
 
@@ -22,13 +22,13 @@
             color: #fcfcfc;
             font-size: 1rem;
             font-family: var(--font-inter);
-
-            &::after {
-            content: "|";
-            color: rgba(255, 255, 255, 0.15);
-            padding-left: 1rem;
-            }
         }
+    }
+    li:not(:last-child):after {
+        content: "|";
+        color: rgba(255, 255, 255, 0.15);
+        padding-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -36,4 +36,11 @@
     display: flex;
     justify-content: center;
     color: rgb(190, 190, 190);
+
+    span:not(:last-child):after {
+        content: "|";
+        color: rgba(255, 255, 255, 0.15);
+        padding-left: 0.5rem;
+        margin-right: 0.6rem;
+    }
 }
