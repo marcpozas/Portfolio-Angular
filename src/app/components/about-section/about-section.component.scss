@@ -1,6 +1,6 @@
 .about-section {
     background-color: #EAE6E4;
-    height: 125vh;
+    min-height: 125vh;
     width: auto;
     display: flex;
     align-items: center;
@@ -12,6 +12,8 @@
     width: 50%;
     display: flex;
     flex-direction: column;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
 
     h2 {
         font-family: var(--font-istok-web);
@@ -102,3 +104,106 @@
     -webkit-animation-timing-function: ease-in-out;
     animation: spin 1s ease-in-out;
   }
+
+
+
+
+  // Media Queries - Desktop and Laptop Screens
+@media (max-width: 1920px) {}
+@media (max-width: 1650px) {        // Extra
+  .floating-decoration img {
+    height: 8rem;
+  }
+}
+@media (max-width: 1550px) {        // Extra
+  .floating-decoration img {
+    height: 7rem;
+  }
+}
+@media (max-width: 1440px) {
+  .floating-decoration {
+    .html-icon {
+      left: 6rem;
+    }
+    .API-icon {
+      left: 6rem;
+    }
+    .command-line-icon {
+      right: 6rem;
+    }
+  }
+  p {
+    font-size: 1.4rem !important;
+  }
+}
+
+// Media Queries - Tablets
+@media (max-width: 1300px) {
+  .floating-decoration {
+    img {
+      height: 6rem;
+    }
+    .html-icon {
+      left: 4rem;
+    }
+    .API-icon {
+      left: 4rem;
+    }
+    .command-line-icon {
+      right: 4rem;
+    }
+  }
+  p {
+    font-size: 1.2rem !important;
+  }
+}
+@media (max-width: 1024px) {
+  .floating-decoration {
+    img {
+      height: 5rem;
+    }
+    .html-icon {
+      left: 3rem;
+    }
+    .API-icon {
+      left: 3rem;
+    }
+    .command-line-icon {
+      right: 3rem;
+    }
+  }
+  h2 {
+    font-size: 3.5rem !important;
+    margin-bottom: 2rem !important;
+  }
+  p {
+    font-size: 1.1rem !important;
+    margin-bottom: 1rem !important;
+  }
+}
+
+// Media Queries - Mobile Devices
+@media (max-width: 768px) {
+  .floating-decoration {
+    visibility: hidden;
+  }
+  .about-content {
+    width: 70%;
+  }
+  p {
+    font-size: 1rem !important;
+    margin-bottom: 1.4rem !important;
+  }
+  button {
+    padding: 1.8rem 1.6rem !important;
+    font-size: 1.5rem !important;
+  }
+}
+@media (max-width: 630px) {
+  .about-content {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+
+}
