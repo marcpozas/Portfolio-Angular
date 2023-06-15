@@ -1,10 +1,14 @@
 .hero-section {
     background-color: #74758E;
-    height: 100vh;
+    min-height: 100vh;
     width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-items {
+    margin: 10rem 0 6.4rem 0;
     display: flex;
     align-items: center;
     height: 100%;
@@ -14,12 +18,13 @@
 .me-content {
     display: flex;
     width: 100%;
+    justify-content: center;
     
 }
 
 .hello-card{
     background-color: var(--secondary-color);
-    margin-left: 12.5rem;
+    //margin-left: 12.5rem;
     max-width: 40%;
     height: 55%;
     padding: 3.5rem;
@@ -30,7 +35,7 @@
         font-family: var(--font-istok-web);
         font-weight: bold;
         color: var(--title-color);
-        font-size: 4.4rem;
+        font-size: 3.6rem;
         margin-bottom: 2.8rem;
     }
     mat-card-subtitle {
@@ -61,7 +66,7 @@
 }
 
 .me-img {
-    margin: 0 0.6rem 0px 10rem;
+    margin: 0 0 0 10rem;
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -80,7 +85,9 @@
     align-items: center;
     justify-content: center;
     width: 5%;
+    width: 6rem;
     height: 20%;
+    height: 12rem;
     background-color: var(--secondary-color);
     border-radius: 0.6rem;
     box-shadow: -2px 6px 4px 0 rgba(0, 0, 0, 0.25);
@@ -114,6 +121,280 @@
             width: 3rem;
             height: auto;
             cursor: pointer;
+        }
+    }
+}
+
+
+
+// Media Queries - Desktop and Laptop Screens
+@media (max-width: 1920px) {}
+@media (max-width: 1650px) {        // Extra
+    .hello-card {
+        mat-card-title {
+            font-size: 3.4rem;
+        }
+        mat-card-subtitle {
+            font-size: 2rem;
+        }
+        mat-card-content {
+            font-size: 1.4rem;
+        }
+    }
+    .me-img {
+        margin: 0 0 0 9rem;
+        img {
+            width: 31rem;
+        }
+    }
+}
+@media (max-width: 1550px) {        // Extra
+    
+    .hello-card {
+        //margin-left: 11rem;
+        mat-card-title {
+            font-size: 3.5rem;
+        }
+        mat-card-subtitle {
+            font-size: 2rem;
+        }
+        mat-card-content {
+            font-size: 1.4rem;
+        }
+    }
+    .me-img {
+        margin: 0 0.6rem 0px 7rem;
+        img {
+            width: 31rem;
+        }
+    }
+    .socials {
+        height: 10rem;
+        width: 5rem;
+        img {
+            width: 2.5rem !important;
+        }
+    }
+}
+@media (max-width: 1440px) {
+    .hello-card {
+        //margin-left: 10rem;
+        mat-card-title {
+            font-size: 3rem;
+        }
+        mat-card-subtitle {
+            font-size: 1.7rem;
+        }
+        mat-card-content {
+            font-size: 1.2rem;
+        }
+        button {
+            font-size: 1.8rem;
+            padding: 2.5rem 2.8rem;
+        }
+    }
+    .me-img {
+        margin: 0 0 0 6rem;
+        img {
+            width: 28rem;
+        }
+    }
+    .socials {
+        height: 8.5rem;
+        img {
+            width: 2.5rem !important;
+        }
+    }
+}
+
+// Media Queries - Tablets
+@media (max-width: 1300px) {
+    .hello-card {
+        //margin-left: 7rem;
+        padding: 3rem;
+        mat-card-title {
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+        mat-card-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        mat-card-content {
+            font-size: 1rem;
+        }
+        button {
+            font-size: 1.4rem;
+            padding: 2rem 2.2rem;
+        }
+    }
+    .me-img {
+        margin: 0 0 0 4.5rem;
+        img {
+            width: 22rem;
+        }
+    }
+
+    
+}
+@media (max-width: 1024px) {
+    .hello-card {
+        padding: 1.5rem;
+        mat-card-title {
+            font-size: 1.9rem;
+            margin-bottom: 1rem;
+        }
+        mat-card-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        mat-card-content {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            font-size: 0.9rem;
+            padding: 1.4rem 1.4rem;
+        }
+    }
+    .me-img {
+        margin: 0 0 0 4.5rem;
+        img {
+            width: 18rem;
+        }
+    }
+}
+
+// Media Queries - Mobile Devices
+@media (max-width: 768px) {
+    .hello-card {
+        max-width: 60%;
+        padding: 2rem;
+        border-radius: 3.75rem;
+        mat-card {
+            display: flex;
+            justify-content: center;
+        }
+        mat-card-title {
+            font-size: 2.4rem;
+            margin-bottom: 1.5rem;
+        }
+        mat-card-subtitle {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+        mat-card-content {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            font-size: 1.3rem;
+            padding: 1.8rem 1.8rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .me-img {
+        margin: 0 0 0 4.5rem;
+        img {
+            width: 20rem;
+        }
+    }
+    .me-content {
+        flex-direction: column;
+        align-items: center;
+        .me-img {
+            order: -1;
+            margin: 0 0 1rem 0;
+        }
+    }
+    .socials {
+        visibility: hidden;
+    }
+}
+@media (max-width: 630px) {
+    .hello-card {
+        max-width: 60%;
+        padding: 1.5rem;
+        border-radius: 3.75rem;
+        mat-card {
+            display: flex;
+            justify-content: center;
+        }
+        mat-card-title {
+            font-size: 1.7rem;
+            margin-bottom: 0.6rem;
+        }
+        mat-card-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 0.6rem;
+        }
+        mat-card-content {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            font-size: 1.1rem;
+            padding: 1.6rem 1.4rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .me-img {
+        margin: 0 0 0 4.5rem;
+        img {
+            width: 18rem;
+        }
+    }
+    .me-content {
+        flex-direction: column;
+        align-items: center;
+        .me-img {
+            order: -1;
+            margin: 0 0 1rem 0;
+        }
+    }
+}
+@media (max-width: 480px) {
+    .hello-card {
+        max-width: 80%;
+        padding: 1.5rem;
+        border-radius: 3.75rem;
+        mat-card {
+            display: flex;
+            justify-content: center;
+        }
+        mat-card-title {
+            font-size: 1.7rem;
+            margin-bottom: 0.6rem;
+        }
+        mat-card-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 0.6rem;
+        }
+        mat-card-content {
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+        button {
+            font-size: 1.1rem;
+            padding: 1.6rem 1.4rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    .me-img {
+        margin: 0 0 0 4.5rem;
+        img {
+            width: 18rem;
+        }
+    }
+    .me-content {
+        flex-direction: column;
+        align-items: center;
+        .me-img {
+            order: -1;
+            margin: 0 0 1rem 0;
         }
     }
 }
