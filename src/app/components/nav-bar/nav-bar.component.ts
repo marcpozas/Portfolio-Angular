@@ -8,6 +8,18 @@ import { Component, OnInit, HostListener, Output, EventEmitter } from '@angular/
 export class NavBarComponent {
   isScrolled = false;
 
+  ngAfterViewInit() {
+    const hamburguerElement = document.getElementById('hamburguer-icon');
+    if (hamburguerElement) {
+      hamburguerElement.addEventListener('click', this.hamburgerClick);
+    }
+  }
+
+  hamburgerClick() {
+    console.log('Label clicked!');
+    // Handle your logic here
+  }
+
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isScrolled = window.pageYOffset >= window.innerHeight;
@@ -19,4 +31,6 @@ export class NavBarComponent {
     console.log("app-nav-bar found!");
     this.scrollToSectionEvent.emit(sectionId);
   }
+
+  
 }
