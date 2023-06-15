@@ -1,5 +1,5 @@
 .projects-section {
-    height: 160vh;
+    min-height: 160vh;
     width: auto;
     background-color: #EAE6E4;
     background-color: #b5b6ca;
@@ -138,4 +138,54 @@
             max-height: 28rem;
         }
     }
+}
+
+
+
+
+// Media Queries - Desktop and Laptop Screens
+@media (max-width: 1920px) {}
+@media (max-width: 1650px) {        // Extra
+
+}
+@media (max-width: 1550px) {        // Extra
+
+}
+@media (max-width: 1440px) {
+
+}
+
+// Media Queries - Tablets
+@media (max-width: 1300px) {
+
+}
+@media (max-width: 1024px) {
+    .all-projects-div {
+        flex-direction: column;
+        align-items: center;
+        .project-div-container {
+            width: 80%;
+        }
+    }
+}
+
+// Media Queries - Mobile Devices
+@media (max-width: 768px) {
+    h2 {
+        font-size: 3.5rem !important;
+    }
+    h6 {
+        font-size: 1.2rem !important;
+    }
+    .projects-title,
+    .projects-subtitle {
+        margin-bottom: 1.5rem;
+        width: 65%;
+    }
+}
+@media (max-width: 630px) {
+
+}
+@media (max-width: 480px) {
+
 }
