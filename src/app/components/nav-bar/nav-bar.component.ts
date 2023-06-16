@@ -11,12 +11,23 @@ export class NavBarComponent {
   ngAfterViewInit() {
     const hamburguerElement = document.getElementById('hamburguer-icon');
     if (hamburguerElement) {
-      hamburguerElement.addEventListener('click', this.hamburgerClick);
+      hamburguerElement.addEventListener('click', () => this.hamburgerClick(hamburguerElement));
     }
   }
 
-  hamburgerClick() {
+  hamburgerClick(element: HTMLElement) {
     console.log('Label clicked!');
+
+    const navbarList = document.getElementById('navbar-list');
+
+    if (!navbarList) {
+      return;
+    }
+    if (navbarList.classList.contains('navbar-items-expanded')) {
+      navbarList.classList.remove('navbar-items-expanded');
+    } else {
+      navbarList.classList.add('navbar-items-expanded');
+    }
     // Handle your logic here
   }
 

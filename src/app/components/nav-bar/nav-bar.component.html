@@ -2,16 +2,12 @@
 
   <span (click)="scrollToSection('hero-section')" class="navbar-logo"><p class="unselectable">Marc</p></span>
 
-  <div class="navbar-items unselectable">
+  <div id="navbar-list" class="navbar-items unselectable">
     <a (click)="scrollToSection('hero-section')">Inicio</a>
     <a (click)="scrollToSection('about-section')">Sobre mí</a>
     <a (click)="scrollToSection('projects-section')">Proyectos</a>
     <a (click)="scrollToSection('contactme-section')">Contáctame</a>
-    <mat-icon id="hamburguer-icon">menu</mat-icon>
-
-    <div class="navbar-darkmode">
-    </div>
-
   </div>
+  <mat-icon id="hamburguer-icon">menu</mat-icon>
 
 </mat-toolbar>
