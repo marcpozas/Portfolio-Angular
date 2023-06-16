@@ -41,10 +41,12 @@
   .navbar-items a {
     text-decoration: none;
     font-family: var(--font-hind);
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--title-color); /* Set your desired text color */
     transition: color 0.2s ease, border 0.1s ease;
     cursor: pointer;
+    text-transform: uppercase;
+    color: #333333;
   }
 
   mat-icon {
@@ -101,7 +103,7 @@
 }
 @media (max-width: 1024px) {
   .navbar-items a {
-    font-size: 1.35rem;
+    font-size: 1.2rem;
   }
   .navbar-logo p {
     font-size: 1.5rem;
