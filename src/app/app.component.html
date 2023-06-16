@@ -1,7 +1,7 @@
 
 <app-nav-bar (scrollToSectionEvent)="scrollToSection($event)"></app-nav-bar>
 <div id="app-hero" #heroSection>
-    <app-hero-section></app-hero-section>
+    <app-hero-section (scrollToSectionEvent)="scrollToSection($event)"></app-hero-section>
 </div>
 <div id="app-about" #aboutSection>
   <app-about-section></app-about-section>
