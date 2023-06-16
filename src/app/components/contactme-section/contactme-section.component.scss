@@ -1,6 +1,6 @@
 .contactme-section {
     background-color: #b5b6ca;
-    height: 130vh;
+    min-height: 130vh;
     width: auto;
     display: flex;
 
@@ -96,9 +96,9 @@
 }
 
 .contactme-socials img {
-width: 25%;
+width: 3.5rem;
 height: auto;
-max-height: 80px;
+max-height: 5rem;
 object-fit: contain;
 margin-right: 2rem;
 }
@@ -116,7 +116,7 @@ color: #888;
 .contactme-content {
     display: grid;
     grid-template-columns: 3fr 5fr;
-    gap: 2rem;
+    gap: 4rem;
     margin: 0 20rem;
   }
 
@@ -192,4 +192,105 @@ color: #888;
 
 .invalid {
     border-color: rgb(199, 85, 85) !important;
+}
+
+
+
+
+// Media Queries - Desktop and Laptop Screens
+@media (max-width: 1920px) {}
+@media (max-width: 1650px) {        // Extra
+  .social-title {
+    font-size: 1.4rem !important;
+  }
+  .social-user {
+    font-size: 0.9rem !important;
+  }
+  img {
+    width: 3rem !important;
+  }
+  .contactme-socials {
+    margin-left: 3rem;
+  }
+}
+@media (max-width: 1550px) {        // Extra
+  .contactme-socials {
+    margin-left: 1.5rem;
+  }
+}
+@media (max-width: 1440px) {
+  .contactme-socials {
+    margin-left: 0;
+  }
+  .contactme-content {
+    margin: 0 15rem;
+  }
+}
+
+// Media Queries - Tablets
+@media (max-width: 1300px) {
+  .contactme-content {
+    margin: 0 10rem;
+  }
+  .contactme-subtitle {
+    margin: 0 10rem 3rem 10rem;
+  }
+}
+@media (max-width: 1024px) {
+  .contactme-content {
+    margin: 0 5rem 4rem 5rem;
+  }
+  .contactme-subtitle {
+    margin: 0 0 2rem 0;
+    width: 80%;
+  }
+}
+
+// Media Queries - Mobile Devices
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3.5rem !important;
+  }
+  h6 {
+    font-size: 1.2rem !important;
+  }
+  .contactme-title-content {
+    margin-bottom: 1.5rem;
+  }
+}
+@media (max-width: 630px) {
+  .contactme-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 3rem 4rem 3rem;
+    gap: 2rem;
+    .contactme-socials {
+      justify-content: center;
+      margin-top: 0rem;
+    }
+  }
+  .social-title {
+    font-size: 2rem !important;
+  }
+  .social-user {
+    font-size: 1rem !important;
+  }
+  img {
+    width: 3.5rem !important;
+  }
+  .contactme-social-element {
+    margin-bottom: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .social-title {
+    font-size: 1.6rem !important;
+  }
+  .social-user {
+    font-size: 0.9rem !important;
+  }
+  img {
+    width: 3rem !important;
+  }
 }

@@ -34,7 +34,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin: 4rem 0;
     margin: 14rem 0 4rem 0;
 
     h2 {
@@ -53,6 +52,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 4.4rem;
+    margin-bottom: 14rem;
 }
 
 .project-div-container {
@@ -83,7 +83,7 @@
         transition: margin 0.2s ease-in-out;
 
         .project-name {
-            margin: 2.5rem 3.75rem;
+            margin: 2.5rem 3.75rem 2.5rem 0;
         }
     }
 }
@@ -112,8 +112,6 @@
     }
 
     figure {
-        // display: flex;
-        // justify-content: center;
         img {
             max-height: 30rem;
         }
@@ -157,7 +155,9 @@
 
 // Media Queries - Tablets
 @media (max-width: 1300px) {
-
+    .project-name {
+        font-size: 1.75rem;
+    }
 }
 @media (max-width: 1024px) {
     .all-projects-div {
@@ -166,6 +166,9 @@
         .project-div-container {
             width: 80%;
         }
+    }
+    .projects-subtitle {
+        width: 70%;
     }
 }
 
@@ -182,10 +185,34 @@
         margin-bottom: 1.5rem;
         width: 65%;
     }
+    .project-div {
+        height: 25rem;
+    }
+    .project-name {
+        font-size: 1.5rem !important;
+    }
+    .projects-subtitle {
+        width: 80%;
+    }
 }
 @media (max-width: 630px) {
-
+    h2 {
+        font-size: 3.5rem !important;
+    }
+    h6 {
+        font-size: 1rem !important;
+    }
+    .project-name {
+        font-size: 1.6rem;
+    }
 }
 @media (max-width: 480px) {
-
+    .project-div {
+        height: 20rem;
+    }
+    figure {
+        img {
+            max-height: 15rem !important;
+        }
+    }
 }

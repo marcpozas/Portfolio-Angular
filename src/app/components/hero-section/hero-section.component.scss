@@ -295,7 +295,6 @@
         }
     }
     .me-img {
-        margin: 0 0 0 4.5rem;
         img {
             width: 20rem;
         }
@@ -305,11 +304,14 @@
         align-items: center;
         .me-img {
             order: -1;
-            margin: 0 0 1rem 0;
+            margin: 0 0 3rem 0;
         }
     }
     .socials {
         visibility: hidden;
+    }
+    .hero-items {
+        margin: 8.5rem 0 6.4rem 0;
     }
 }
 @media (max-width: 630px) {
@@ -351,7 +353,7 @@
         align-items: center;
         .me-img {
             order: -1;
-            margin: 0 0 1rem 0;
+            margin: 0 0 2rem 0;
         }
     }
 }
@@ -394,7 +396,7 @@
         align-items: center;
         .me-img {
             order: -1;
-            margin: 0 0 1rem 0;
+            margin: 0 0 2rem 0;
         }
     }
 }
