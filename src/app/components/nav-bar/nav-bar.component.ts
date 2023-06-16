@@ -6,6 +6,7 @@ import { Component, OnInit, HostListener, Output, EventEmitter } from '@angular/
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
+  hamburguerSymbol: string = "menu";
   isScrolled = false;
 
   ngAfterViewInit() {
@@ -16,7 +17,6 @@ export class NavBarComponent {
   }
 
   hamburgerClick(element: HTMLElement) {
-    console.log('Label clicked!');
 
     const navbarList = document.getElementById('navbar-list');
 
@@ -25,8 +25,10 @@ export class NavBarComponent {
     }
     if (navbarList.classList.contains('navbar-items-expanded')) {
       navbarList.classList.remove('navbar-items-expanded');
+      this.hamburguerSymbol = 'menu';
     } else {
       navbarList.classList.add('navbar-items-expanded');
+      this.hamburguerSymbol = 'clear';
     }
     // Handle your logic here
   }
@@ -39,7 +41,6 @@ export class NavBarComponent {
   @Output() scrollToSectionEvent = new EventEmitter<string>();
 
   scrollToSection(sectionId: string) {
-    console.log("app-nav-bar found!");
     this.scrollToSectionEvent.emit(sectionId);
   }
 

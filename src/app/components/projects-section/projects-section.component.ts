@@ -27,12 +27,10 @@ export class ProjectsSectionComponent {
 
     projectDivs.forEach((projectDiv) => {
       projectDiv.addEventListener('click', () => {
-        console.log("ENTER");
         // Get the project class from the clicked div
         const projectClass = Array.from(projectDiv.classList).find((className) =>
           className.endsWith('-project')
         );
-        console.log(projectClass);
 
         if (projectClass) {
           // Get the corresponding URL from the dictionary

@@ -31,7 +31,6 @@ export class ContactmeSectionComponent implements OnInit {
   
     // Handle valid form submission and send the data to the server
     const formData = this.contactForm.value;
-    console.log(formData);
   
     this.http.post('https://5264v0m0rd.execute-api.eu-north-1.amazonaws.com/dev/sendcontact', formData)
       .subscribe(

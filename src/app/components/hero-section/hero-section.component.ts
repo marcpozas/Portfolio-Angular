@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-hero-section',
@@ -23,7 +23,6 @@ export class HeroSectionComponent {
   @Output() scrollToSectionEvent = new EventEmitter<string>();
 
   scrollToSection() {
-    console.log("app-nav-bar found!");
     this.scrollToSectionEvent.emit("contactme-section");
   }
   

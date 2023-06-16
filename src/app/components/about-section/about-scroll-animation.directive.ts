@@ -23,17 +23,11 @@ export class AboutScrollAnimationDirective {
     const initialTop = computedStyles.getPropertyValue('top');
     const iconPercentageHeight = parseFloat(initialTop) * 100 / viewportHeight;
     const iconInitialPercentageHeight = parseFloat(this.initialTop) * 100 / viewportHeight;
-    // console.log("icon" + iconPercentageHeight);
     const pixelsToMove = viewportHeight * 2;
 
     const scrolledPercentageFirstVH = (scrolled / pixelsToMove * 2) * 100;
-    // console.log("user" + scrolledPercentageFirstVH);
-
-    console.log("iconInitialPercentageHeight" + iconInitialPercentageHeight);
-    console.log("scrolledPercentageFirstVH" + scrolledPercentageFirstVH);
 
     if (scrolledPercentageFirstVH < 200) {
-      //this.renderer.addClass(socials, 'scrolled');
       this.renderer.setStyle(
         icon,
         'top',
