@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     padding: 2rem 10rem;
+    padding: 2rem 0;
     flex-direction: column;
     background-color: var(--third-color);
 }
@@ -37,6 +38,9 @@
     justify-content: center;
     color: rgb(190, 190, 190);
 
+    span {
+        font-size: 0.8rem;
+    }
     span:not(:last-child):after {
         content: "|";
         color: rgba(255, 255, 255, 0.15);
@@ -45,26 +49,38 @@
     }
 }
 
-// Media Queries - Mobile Devices
-@media (max-width: 480px) {
+// Media Queries - Desktop and Laptop Screens
+@media (max-width: 1920px) {}
+@media (max-width: 1650px) {        // Extra
 
 }
-@media (max-width: 768px) {
+@media (max-width: 1550px) {        // Extra
+
+}
+@media (max-width: 1440px) {
 
 }
 
 // Media Queries - Tablets
+@media (max-width: 1300px) {
+
+}
 @media (max-width: 1024px) {
 
 }
-@media (max-width: 1366px) {
+
+// Media Queries - Mobile Devices
+@media (max-width: 768px) {
 
 }
-
-// Media Queries - Desktop and Laptop Screens
-@media (max-width: 1440px) {
+@media (max-width: 630px) {
 
 }
-@media (max-width: 1920px) {
-
+@media (max-width: 480px) {
+    .socials-element span {
+        font-size: 0.8rem;
+    }
+    .copyright span {
+        font-size: 0.7rem;
+    }
 }
