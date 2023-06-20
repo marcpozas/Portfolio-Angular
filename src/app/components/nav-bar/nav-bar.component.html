@@ -3,10 +3,10 @@
   <span (click)="scrollToSection('hero-section')" class="navbar-logo"><p class="unselectable">Marc</p></span>
 
   <div id="navbar-list" class="navbar-items unselectable">
-    <a (click)="scrollToSection('hero-section')">Inicio</a>
-    <a (click)="scrollToSection('about-section')">Sobre mí</a>
-    <a (click)="scrollToSection('projects-section')">Proyectos</a>
-    <a (click)="scrollToSection('contactme-section')">Contáctame</a>
+    <a [class.secondColor]="isScrolled" (click)="scrollToSection('hero-section')">Inicio</a>
+    <a [class.secondColor]="isScrolled" (click)="scrollToSection('about-section')">Sobre mí</a>
+    <a [class.secondColor]="isScrolled" (click)="scrollToSection('projects-section')">Proyectos</a>
+    <a [class.secondColor]="isScrolled" (click)="scrollToSection('contactme-section')">Contáctame</a>
   </div>
   <mat-icon id="hamburguer-icon">{{hamburguerSymbol}}</mat-icon>
 
