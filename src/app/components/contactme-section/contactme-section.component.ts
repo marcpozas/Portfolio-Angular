@@ -37,6 +37,7 @@ export class ContactmeSectionComponent implements OnInit {
         (response) => {
           console.log(response); // Example: Print server response to the console
           // Handle the server response as needed
+          this.contactForm.reset(); // Clear the form inputs
         },
         (error) => {
           console.error(error); // Example: Print error to the console
