@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class FooterComponent {
   socialList: { name: string, href: string }[] = [
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/' },
-    { name: 'Github', href: 'https://github.com/' },
-    { name: 'Instagram', href: 'https://www.instagram.com/' }
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/marcpozas/' },
+    { name: 'Github', href: 'https://github.com/marcpozas/' },
+    { name: 'Instagram', href: 'https://www.instagram.com/marc_pzb/' }
   ];
 
 }
