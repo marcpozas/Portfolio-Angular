@@ -16,9 +16,13 @@ export class ProjectsSectionComponent {
     'third-project': 'https://github.com/marcpozas/Amazon-Price-Checker'
   };
 
+  supportsWebP: boolean | undefined;
+
   constructor() {  }
 
   ngOnInit() {
+    const canvas = document.createElement('canvas');
+    this.supportsWebP = canvas.toDataURL('image/webp').startsWith('data:image/webp');
     this.setupProjectDivClick();
   }
 

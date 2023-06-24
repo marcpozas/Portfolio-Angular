@@ -12,21 +12,36 @@
     <div class="contactme-content">
         <div class="contactme-socials">
           <a class="contactme-social-element" href="https://www.linkedin.com/in/marcpozas/" target="_blank">
-            <img src="assets/icons/linkedin_icon.png" alt="">
+            <!-- <img src="assets/icons/linkedin_icon.png" alt=""> -->
+            <picture>
+              <source srcset="assets/icons/linkedin_icon.webp" type="image/webp" *ngIf="supportsWebP">
+              <source srcset="assets/icons/linkedin_icon.png" type="image/png">
+              <img src="assets/icons/linkedin_icon.png" alt="LinkedIn Logo">
+            </picture>
             <div class="contactme-social-linkedin-info">
               <p class="social-title">LinkedIn</p>
               <p class="social-user">marcpozas</p>
             </div>
           </a>
           <a class="contactme-social-element" href="https://github.com/marcpozas" target="_blank">
-            <img src="assets/icons/github_icon.png" alt="">
+            <!-- <img src="assets/icons/github_icon.png" alt=""> -->
+            <picture>
+              <source srcset="assets/icons/github_icon.webp" type="image/webp" *ngIf="supportsWebP">
+              <source srcset="assets/icons/github_icon.png" type="image/png">
+              <img src="assets/icons/github_icon.png" alt="Github Logo">
+            </picture>
             <div class="contactme-social-linkedin-info">
               <p class="social-title">GitHub</p>
               <p class="social-user">marcpozas</p>
             </div>
           </a>
           <div class="contactme-social-element">
-            <img src="assets/icons/542638.png" alt="">
+            <!-- <img src="assets/icons/542638.png" alt=""> -->
+            <picture>
+              <source srcset="assets/icons/mail_logo.webp" type="image/webp" *ngIf="supportsWebP">
+              <source srcset="assets/icons/mail_logo.png" type="image/png">
+              <img src="assets/icons/mail_logo.png" alt="Mail Logo">
+            </picture>
             <div class="contactme-social-linkedin-info">
               <p class="social-title">Email</p>
               <p class="social-user">marc.pozas11@gmail.com</p>

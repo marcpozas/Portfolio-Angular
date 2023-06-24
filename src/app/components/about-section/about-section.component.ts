@@ -16,12 +16,15 @@ export class AboutSectionComponent {
   contactMeButton = "Contáctame";
   aboutMeCV = "Mi CV"
 
+  supportsWebP: boolean | undefined;
+
   constructor() {
 
   }
 
   ngOnInit() {
-    // Perform component initialization tasks here
+    const canvas = document.createElement('canvas');
+    this.supportsWebP = canvas.toDataURL('image/webp').startsWith('data:image/webp');
   }
 
   public openPDF(): void {

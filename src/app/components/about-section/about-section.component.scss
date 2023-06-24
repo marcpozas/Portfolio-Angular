@@ -105,7 +105,11 @@
     animation: spin 1s ease-in-out;
   }
 
-
+  .floating-decoration {
+    img {
+      height: 8rem;
+    }
+  }
 
 
   // Media Queries - Desktop and Laptop Screens

@@ -17,18 +17,39 @@
             </mat-card>
 
             <div class="me-img">
-                <img src="assets/images/me_image_1.png" alt="Me Image">
+                <!-- <img src="assets/images/me_image_1.png" alt="Me Image"> -->
+                <picture>
+                    <source srcset="assets/images/me_image_1.webp" type="image/webp" *ngIf="supportsWebP">
+                    <source srcset="assets/images/me_image_1.png" type="image/png">
+                    <img src="assets/images/me_image_1.png" alt="Me Image">
+                </picture>
             </div>
         </div>
 
         <mat-card class="socials" scrollAnimation>
             <a class="linkedin" href="https://www.linkedin.com/in/marcpozas/" target="_blank">
-                <img class="linkedin_transparent" src="assets/icons/linkedin_icon.png" alt="GitHub Logo">
-                <img class="linkedin_white" src="assets/icons/linkedin_icon_white.png" alt="GitHub Logo">
+                <picture class="linkedin_transparent">
+                    <source srcset="assets/icons/linkedin_icon.webp" type="image/webp" *ngIf="supportsWebP">
+                    <source srcset="assets/icons/linkedin_icon.png" type="image/png">
+                    <img src="assets/icons/linkedin_icon.png" alt="LinkedIn Logo">
+                </picture>
+                <picture class="linkedin_white">
+                    <source srcset="assets/icons/linkedin_icon_white.webp" type="image/webp" *ngIf="supportsWebP">
+                    <source srcset="assets/icons/linkedin_icon_white.png" type="image/png">
+                    <img src="assets/icons/linkedin_icon_white.png" alt="LinkedIn Image">
+                </picture>
             </a>
             <a class="github" href="https://github.com/marcpozas" target="_blank">
-                <img class="github_transparent" src="assets/icons/github_icon.png" alt="LinkedIn Logo">
-                <img class="github_white" src="assets/icons/github_icon_white.png" alt="LinkedIn Logo">
+                <picture class="linkedin_transparent">
+                    <source srcset="assets/icons/github_icon.webp" type="image/webp" *ngIf="supportsWebP">
+                    <source srcset="assets/icons/github_icon.png" type="image/png">
+                    <img src="assets/icons/github_icon.png" alt="LinkedIn Logo">
+                </picture>
+                <picture class="linkedin_white">
+                    <source srcset="assets/icons/github_icon_white.webp" type="image/webp" *ngIf="supportsWebP">
+                    <source srcset="assets/icons/github_icon_white.png" type="image/png">
+                    <img src="assets/icons/github_icon_white.png" alt="LinkedIn Image">
+                </picture>
             </a>
         </mat-card>
     </div>

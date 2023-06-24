@@ -12,12 +12,15 @@ export class HeroSectionComponent {
   content = "Experiencia en Front End, Back End y desarrollo de aplicaciones";
   contactMeButton = "Contáctame";
 
+  supportsWebP: boolean | undefined
+
   constructor() {
 
   }
 
   ngOnInit() {
-    // Perform component initialization tasks here
+    const canvas = document.createElement('canvas');
+    this.supportsWebP = canvas.toDataURL('image/webp').startsWith('data:image/webp');
   }
 
   @Output() scrollToSectionEvent = new EventEmitter<string>();
@@ -25,7 +28,6 @@ export class HeroSectionComponent {
   scrollToSection() {
     this.scrollToSectionEvent.emit("contactme-section");
   }
-  
   
 
 }

@@ -116,11 +116,14 @@
             }
         }
 
-        img {
+        picture {
             position: absolute;
             width: 3rem;
             height: auto;
             cursor: pointer;
+            img {
+                width: 3rem;
+            }
         }
     }
 }

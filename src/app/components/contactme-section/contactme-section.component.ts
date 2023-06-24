@@ -21,7 +21,12 @@ export class ContactmeSectionComponent implements OnInit {
     });
   }
 
-  ngOnInit() {}
+  supportsWebP: boolean | undefined;
+
+  ngOnInit() {
+    const canvas = document.createElement('canvas');
+    this.supportsWebP = canvas.toDataURL('image/webp').startsWith('data:image/webp');
+  }
   
   submitForm() {
     if (this.contactForm.invalid) {
