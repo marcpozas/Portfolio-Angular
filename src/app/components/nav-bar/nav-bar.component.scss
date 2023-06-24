@@ -159,6 +159,9 @@
       }
     }
   }
+  .secondColor .navbar-items a {
+    border-color: #3f3f3f;
+}
   .navbar-items a {
     transition: background-color 0.3s ease !important;
   }
