@@ -72,8 +72,9 @@
     
   }
 }
-
-
+.hamburguer-menu {
+  transition: opacity 0.3s ease;
+}
 
 // Media Queries - Desktop and Laptop Screens
 @media (max-width: 1920px) {
@@ -139,6 +140,7 @@
     font-size: 2.4rem;
   }
   .navbar-items-expanded {
+    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
     position: absolute;
