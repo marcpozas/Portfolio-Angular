@@ -29,6 +29,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AboutScrollAnimationDirective } from './components/about-section/about-scroll-animation.directive';
 import { FooterComponent } from './components/footer/footer.component';
+import { ScrollAnimation2Directive } from './components/hero-section/scroll-animation2.directive';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ScrollEffectDirective,
     ContactmeSectionComponent,
     AboutScrollAnimationDirective,
-    FooterComponent
+    FooterComponent,
+    ScrollAnimation2Directive
   ],
   imports: [
     BrowserModule,
